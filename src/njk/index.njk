@@ -1,21 +1,19 @@
 {% extends '_layouts/base.njk' %}
 
-{% block page_title %}Diary by Captain{% endblock %}
+{% block page_title %}Diary by Captain McGillicuty{% endblock %}
 
 {% block content %}
 
 <div class="container">
   <div class="row">
-    <div class="col">
-    <h1>Main headline</h1>
-    <p class="author">By Obi-Wan Kenobi</p>
-    <p class="date"> Published May 25, 1977</p>
+    <div class="col-sm-6 offset-sm-3">
+    <h1>A Captain's Tale</h1>
     </div>
   </div>
   <div class="row">
-    <div class="col">
+    <div class="col-sm-6 offset-sm-3">
       <p>
-        Lucas ipsum dolor <a href="detail-book-example.html">link to book page example</a> amidala sith dooku solo moff organa obi-wan windu. Gamorrean binks wedge darth. Mon darth mon kit ponda solo. Moff watto ackbar mothma moff anakin. Lando skywalker lars fett calrissian lars organa. Organa kenobi wedge darth jawa skywalker anakin. Twi'lek kit darth calamari lando kamino droid. Darth jawa fett grievous maul. Palpatine obi-wan leia tusken raider dagobah. Twi'lek qui-gon boba antilles yoda thrawn. Wampa luuke wampa skywalker. Moff ponda ackbar dagobah kit lobot jinn solo.
+        I am Captain Crit McGillicuty and this is my blog. The purpose of this blog is to record and update the journeys taken by my ship. Read carefully and always beware of The Kraken. Don't mistake it's power. 
       </p>
       {% for entry in data.entries %}
         <h3 class="entry-headline"><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
